@@ -6,6 +6,15 @@ html
     box-sizing: border-box;
     font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
     height: 100%;
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion)
+{
+    html
+    {
+        scroll-behavior: initial;
+    }
 }
 
 body
@@ -97,6 +106,74 @@ img, video
     color: white;
 }
 
+.hero-button
+{
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.hero-button:hover
+{
+    transform: scale(0.95);
+}
+
+.hero-button:active
+{
+    background: rgba(0,0,0, 0.3);
+}
+
+/* Portfolio Gallery Styles */
+
+.portfolio-container {
+    margin: 1rem auto 0 auto;
+    align-self: center;
+    text-align: center;
+}
+
+.portfolio-container h1
+{
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.portfolio-gallery
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0.5rem;
+    grid-auto-rows: 300px;
+}
+
+.gallery-item
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-image
+{
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.gallery-image:hover
+{
+    transform: scale(1.5);
+}
+
 /* Add Media Queries for Large Screens */
 
 @media (min-width: 600px)
@@ -117,21 +194,41 @@ img, video
     {
         padding: 2rem;
     }
+
+    .portfolio-container h1
+    {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
 }
 
 @media (min-width: 920px)
 {
-    .hero-heading {
+    .hero-heading 
+    {
         font-size: 6rem;
         line-height: 6rem;
     }
 
-    .hero-text {
+    .hero-text 
+    {
         font-size: 4rem;
         line-height: 4rem;
     }
 
-    .hero-text-box {
+    .hero-text-box 
+    {
         padding: 4rem;
+    }
+
+    .portfolio-container
+    {
+        max-width: 1400px;
+    }
+
+    .portfolio-container h1
+    {
+        font-size: 4rem;
+        line-height: 4rem;
     }
 }
