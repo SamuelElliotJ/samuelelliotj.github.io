@@ -57,19 +57,21 @@ img, video
     z-index: 100;
 }
 
-.title-bar h1
-{
-    font-size: 3rem;
-    display: block;
-    overflow: hidden;
-    text-transform: uppercase;
-    white-space: nowrap;
-    padding: 0.5rem;
-    margin: 0;
-    text-decoration: none;
-    letter-spacing: 0.2rem;
-    color: #000;
-}
+    .title-bar h1 {
+        font-size: 3rem;
+        display: block;
+        overflow: hidden;
+        text-transform: uppercase;
+        white-space: nowrap;
+        padding: 0.5rem;
+        margin: 0;
+        text-decoration: none;
+        letter-spacing: 0.2rem;
+        color: #000;
+        background: -webkit-linear-gradient(#7800FF, #FF00C1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
 .title-bar a
 {
@@ -78,7 +80,7 @@ img, video
     border-bottom: none;
     transition: all ease;
     text-decoration: none;
-    color: white;
+    color: -webkit-text:
 }
 
 /* Nav Menu Styles */
@@ -143,7 +145,7 @@ img, video
     grid-row: 1 / -1;
     align-self: center;
     text-align: center;
-    padding: 1rem;
+    padding: 0rem;
     margin: 0;
     z-index: 50;
 }
@@ -152,16 +154,16 @@ img, video
 {
     color: white;
     font-size: 5rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0rem;
     text-transform: uppercase;
-    padding: 1rem;
+    padding: 0.25rem;
 }
 
 .hero-subheading
 {
     color: white;
     font-size: 2rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0rem;
     text-transform: lowercase;
     padding: 0.25rem;
 }
@@ -170,7 +172,7 @@ img, video
 {
     color: white;
     font-size: 1rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0rem;
     text-transform: lowercase;
     padding: 0.25rem;
 }
@@ -179,7 +181,7 @@ img, video
 {
     color: white;
     font-size: 1rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0rem;
     text-transform: lowercase;
     padding: 1rem;
 }
@@ -188,7 +190,7 @@ img, video
 {
     color: red;
     font-size: 1rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0rem;
     text-transform: lowercase;
     text-decoration: none;
 }
@@ -216,7 +218,7 @@ img, video
     grid-row: 1 / -1;
     align-self: center;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0rem;
     margin: 0;
     z-index: 50;
 }
@@ -225,7 +227,7 @@ img, video
 {
     color: white;
     font-size: 5rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0rem;
     text-transform: uppercase;
     padding: 0.5rem;
 }
@@ -283,7 +285,7 @@ img, video
 {
     color: white;
     font-size: 5rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0rem;
     text-transform: uppercase;
     padding: 1rem;
 }
@@ -292,7 +294,7 @@ img, video
 {
     color: white;
     font-size: 3rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0rem;
     text-transform: lowercase;
     padding: 0.25rem;
 }
@@ -327,7 +329,7 @@ img, video
 {
     color: white;
     font-size: 5rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0rem;
     text-transform: uppercase;
     padding: 1rem;
 }
@@ -358,27 +360,65 @@ img, video
     grid-row: 1 / -1;
     align-self: center;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     margin: 0;
     z-index: 50;
-}
-
-.experience-header
-{
-    color: white;
-    font-size: 2.5rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    padding: 1rem;
+    overflow-wrap: normal;
 }
 
 .education-header
 {
     color: white;
-    font-size: 2.5rem;
-    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    letter-spacing: 0rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+.education
+{
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0rem;
     text-transform: uppercase;
     padding: 1rem;
+    margin: 2rem auto 2rem auto
+}
+
+.highlight
+{
+    color: red;
+    font-size: 1.25rem;
+    letter-spacing: 0rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    background: -webkit-linear-gradient(#7800FF, #FF00C1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.qualification
+{
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+.areas-explored
+{
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    background: none;
+}
+
+.aboutme-text-box p2
+{
+
 }
 
 /* Contact Styles */
@@ -404,7 +444,7 @@ img, video
     grid-row: 1 / -1;
     align-self: center;
     text-align: center;
-    padding: 1rem;
+    padding: 0rem;
     margin: 0;
     z-index: 50;
 }
@@ -413,16 +453,16 @@ img, video
 {
     color: white;
     font-size: 5rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0rem;
     text-transform: uppercase;
-    padding: 0.25rem;
+    padding: 0rem;
 }
 
 .contact-text p
 {
     color: white;
     font-size: 1rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0rem;
     text-transform: uppercase;
     padding: 0.25rem;
 }
@@ -431,9 +471,10 @@ img, video
 {
     color: red;
     font-size: 1rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0rem;
     text-transform: lowercase;
     text-decoration: none;
+    margin: 2rem auto 2rem auto
 }
 
 /* Add Media Queries for Large Screens */
