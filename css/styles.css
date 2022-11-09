@@ -327,25 +327,25 @@ hr.rounded
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 0px;
     align-content: center;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     min-height: 85vh;
     height: 100%;
     width: 100%;
     background-color: rgb(20, 20, 20);
 }
 
-.blog-text-box
-{
+.blog-text-box {
     grid-column: 1 /-1;
     grid-row: 1 / -1;
     align-self: center;
     text-align: center;
     padding: 1rem;
-    margin: 0;
     z-index: 50;
+    margin: 10vh 34.6vh 10vh 34.6vh;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .blog-heading
@@ -360,10 +360,74 @@ hr.rounded
 .blog-text
 {
     color: white;
-    font-size: 3rem;
+    font-size: 1.5rem;
     letter-spacing: 0rem;
-    text-transform: lowercase;
-    padding: 0.25rem;
+    padding: 1rem;
+    line-height: normal;
+}
+
+.blog-posts
+{
+    margin: 0vh 20vh 10vh 20vh;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    grid-gap: 0.58rem;
+    align-self: center;
+    align-content: center;
+}
+
+.blog-container
+{
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 600px;
+    border: 3px solid purple;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.blog-container a
+{
+    text-decoration: none;
+}
+
+.blog-img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid purple;
+}
+
+.blog-container hr.rounded
+{
+    margin: 0px 20px 0px 20px;
+}
+
+.blog-title
+{
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    padding: 1rem;
+    line-height: normal;
+}
+
+.blog-description
+{
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    padding: 1rem;
+    line-height: normal;
 }
 
 /* About Me Styles */
