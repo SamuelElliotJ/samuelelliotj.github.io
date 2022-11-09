@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/glightbox.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Samuel Elliot - Portfolio</title>
+</head>
+<body>
+    <!-- Begin Title -->
+    <nav class="title-bar">
+        <h1 class="title-text">
+            <a href="index.html">Samuel Elliot</a>
+        </h1>
+    </nav>
+    <!-- End Title -->
+    <!-- Begin Top Nav -->
+    <nav class="nav-bar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a href="blog.html">Blog</a></li>
+            <li class="nav-item"><a href="aboutme.html">About Me</a></li>
+            <li class="nav-item"><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <!-- End Top Nav -->
+    <!-- Begin Blog -->
+    <section id="blog" class="blog-box">
+        <section class="blog-post-box">
+            <section class="blog-post-container">
+                <h1>My journey in Creating an Indie Game</h1>
+                <hr class="rounded" />
+                <p>This blog will be covering my 2nd year Indie Games Development university project. In this module i have 1 year to fully develop an indie game including polishing and Q&A. My first task in this project is coming up with 3 different concepts which will then be narrowed down to the one i am making.</p>
+                <hr class="rounded" />
+                <h2>Concept 1:</h2>
+                <p>Game Title:<br>Metal Bard (working title)<br><br>Description:<br>An old school RPG adventure game, with rhythm based random encounters<br><br>Features/Mechanics:<br>-2D<br>-Top Down<br>-Rhythm<br>-RPG<br><br>Themes:<br>-Fantasy<br>-Rhythm<br>-Metal<br><br>Premise:<br>Pok&#233;mon style RPG where the random encounters are rhythm based. In each fight you will have to perform your combat actions to the beat.<br><br>Platform:<br>-PC<br><br>OneSheet:</p>
+                <img src="img/concept1onesheet.png" alt="Concept 1: OneSheet" />
+                <hr class="rounded" />
+                <h2>Concept 2:</h2>
+                <p>Game Title:<br>Azathoth (working title)<br><br>Description:<br>A puzzle platformer where the player uses their voice to map their surroundings and make their way to the exit.<br><br>Features/Mechanics:<br>-3D<br>-First Person<br>-Puzzles<br>-Platforming<br>-Microphone / Sound Detection<br><br>Themes:<br>-Lovecraftian<br>-Puzzle<br><br>Premise:<br>A Lovecraftian game where the player is blind. The player must use their voice to map the surroundings and find a way out.<br><br>Platform:<br>-PC<br><br>OneSheet:</p>
+                <img src="img/concept2onesheet.png" alt="Concept 2: OneSheet" />
+                <hr class="rounded" />
+                <h2>Concept 3:</h2>
+                <p>Game Title:<br>Parkour Punk (working title)<br><br>Description:<br>A 3D, multiplayer, parkour game where you compete against friends to get to the end of the course as fast as possible.<br><br>Features / Mechanics:<br>-3D<br>-Third Person<br>-Parkour<br>-Multiplayer<br><br>Themes:<br>-Parkour<br>-Cyberpunk<br><br>Premise:<br>Compete against your friends in a race through a city. Once all the players have decide on the destination its up to you to plan your route and get to the location as fast as possible all while hindering the others in the process.<br><br>Platform:<br>-PC<br><br>OneSheet:</p>
+                <img src="img/concept3onesheet.png" alt="Concept 3: OneSheet" />
+                <hr class="rounded" />
+                <p>After coming up with the ideas i reviewed them along side a lecturer. This was so that i could choose an idea that fits the scope of the module. The idea i landed on was Azathoth (working title). After deciding on which project i am making i began to do a MoSCoW analysis.</p>
+                <hr class="rounded" />
+                <h2>MoSCoW Analysis:</h2>
+                <p>Key Mechanics:<br>-Echolocation (sound based sight)<br>-First Person Movement<br>-Examine Objects<br>-Puzzles<br><br>Must Have:<br>-First Person Movement<br>-Echolocation / Microphone Input<br>-Puzzles<br>-Objects to Examine<br><br>Should Have:<br>-Music<br>-Sound Effects<br>-UI / Menu's<br>-Animations<br><br>Could Have:<br>-Multiplayer<br>-Reactive Sound Effects<br><br>Would Have:<br>-Steam API (multiplayer)<br>-Discord API (discord rich presence)</p>
+                <hr class="rounded" />
+                <p>Now that i have done my MoSCoW analysis, I need to plan my first sprint. Each sprint for this project will be 3 weeks long taking me up to the end of the academic year.</p>
+                <hr class="rounded" />
+                <h2>Sprint 1:</h2>
+                <img src="img/azathothblogsprint1.png" alt="Sprint 1" />
+                <img src="img/azathothblogsprint1-2.png" alt="Sprint 1 - 2" />
+                <p>Note:<br>Documentation and research is included as part of the planned time.<br><br>Target for the next sprint:<br>For the next sprint I want to have a first person character that moves and detects audio. I then want that audio to affect the world in some way as a framework for later features. A basic map for testing would be good so I can test how different puzzles will work and I want the framework for some of the UI elements I will be using later.<br><br>Sprint Concern:<br>My main concern is with audio detection and handling as I have never done it before, however there should be some videos that explain the basics.</p>
+                <hr class="rounded" />
+                <h2>Sprint Review:</h2>
+                <img src="img/azathothblogsprint1review.png" alt="Sprint 1" />
+                <img src="img/azathothblogsprint1review-2.png" alt="Sprint 1 - 2" />
+                <p>
+                    Player controller / Input system:<br>It didn't take too long to implement the player movement with the new input system however I did go through a few iterations until I got something I was happy with. My game does not need a jump so I just have basic walking with both keyboard and controller.<br><br>Player voice detection / control:<br>I created a script that handles taking the input from the microphone and works out the volume which can then be passed into other scripts. I'm still far away from the echolocation system I would like, however for testing i made it so that the environment lerps between 2 materials based on volume.<br><br>Basic UI elements:<br>I didn't manage to create any of the UI elements I wanted to, however I did start on it. The system I want it for you to be able to interact with the object you are looking at rather than just being proximity based.
+                    I didn't know most of the code going in as I do not have the experience in Unity that I have in Unreal so everything was a bit slower, however as the project goes on I will get faster.<br><br>Devlog video:
+                </p>
+                <iframe width="912" height="513" src="https://www.youtube.com/embed/N6XjGE9pumw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <hr class="border" />
+                <h2>Sprint 2:</h2>
+                <img src="img/azathothblogsprint2.png" alt="Sprint 2" />
+                <img src="img/azathothblogsprint2-2.png" alt="Sprint 2 - 2" />
+                <p>Trello:</p>
+                <img src="img/azathothblogtrello2.png" alt="Trello 2" />
+                <p>Notes:<br>Documentation and research time is included in the planned time.<br><br>Target for the next sprint:<br>My goal for the next sprint is to get the echolocation mechanic done as it is the core mechanic of my game. It will also take the longest to code because it deals with shaders and code I have not used before. If I can get this mechanic and the player feel for the mechanic down, the rest will be simple.<br><br>Potential issues:<br>The biggest potential issue is with the shaders and making the unity scene completely black / dark. Unity doesn't seem to like being completely dark, so I may need to tweak a few settings to achieve my desired effect. Learning shader code will also be fairly difficult, however once its done everything is downhill from there.<br><br>Changes made since last sprint:<br>The biggest change since the last sprint is the addition of a Trello which will help me visualise what needs to be done making my workflow more efficient.</p>
+                <hr class="rounded" />
+            </section>
+    </section>
+    <!-- End Blog -->
+
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({ loop: true });
+    </script>
+</body>
+</html>

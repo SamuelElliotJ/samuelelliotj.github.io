@@ -368,14 +368,14 @@ hr.rounded
 
 .blog-posts
 {
-    margin: 0vh 20vh 10vh 20vh;
+    margin: 0vh 10vh 10vh 10vh;
     justify-content: center;
     align-content: center;
     align-self: center;
     align-items: center;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit);
+    grid-template-columns: repeat(auto-fit, minmax(300px,300px));
     grid-gap: 0.58rem;
     align-self: center;
     align-content: center;
@@ -385,12 +385,12 @@ hr.rounded
 {
     min-width: 300px;
     max-width: 300px;
-    min-height: 300px;
+    min-height: 600px;
     max-height: 600px;
     border: 3px solid purple;
     text-align: center;
     align-content: center;
-    align-self: center;
+    align-self: start;
     text-transform: uppercase;
 }
 
@@ -405,6 +405,11 @@ hr.rounded
     width: 100%;
     height: auto;
     border-bottom: 3px solid purple;
+
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
 }
 
 .blog-container hr.rounded
@@ -428,6 +433,72 @@ hr.rounded
     letter-spacing: 0rem;
     padding: 1rem;
     line-height: normal;
+}
+
+/* blog post styles*/
+
+.blog-post-box
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
+.blog-post-container
+{
+    height: 100%;
+    width: 50%;
+    transform: translateX(25vw);
+    align-self: center;
+    text-align: center;
+}
+
+.blog-post-container h1
+{
+    color: white;
+    font-size: 50px;
+    overflow: hidden;
+    line-height: 5rem;
+}
+
+.blog-post-container h2
+{
+    color: white;
+    font-size: 25px;
+    overflow: hidden;
+    line-height: 5rem;
+    text-align: left;
+}
+
+.blog-post-container p
+{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.blog-post-container img
+{
+    width: 100%;
+    height: auto;
+}
+
+.itchiolink
+{
+    text-decoration: none;
+}
+
+.itchiolink h2
+{
+    color: purple;
 }
 
 /* About Me Styles */
@@ -624,6 +695,11 @@ hr.rounded
     text-transform: lowercase;
     text-decoration: none;
     margin: 2rem auto 2rem auto
+}
+
+.contact-text .social
+{
+    font-size: 2rem;
 }
 
 /* Add Media Queries for Large Screens */
