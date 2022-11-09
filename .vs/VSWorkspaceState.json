@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\img",
+    "\\js",
+    "\\webfonts"
   ],
-  "SelectedNode": "\\C:\\Users\\44752\\Documents\\samuelelliotj.github.io",
+  "SelectedNode": "\\js\\glightbox.min.js",
   "PreviewInSolutionExplorer": false
 }
