@@ -467,10 +467,15 @@ img, video
             height: auto;
         }
 
-        .blog-post-container iframe
+        .blog-post-container .video
         {
             width: 384px;
             height: 216px;
+        }
+
+        .blog-post-container .word {
+            width: 333px;
+            height: 600px;
         }
 
     .itchiolink {
@@ -1073,6 +1078,16 @@ img, video
         .blog-post-container img {
             width: 100%;
             height: auto;
+        }
+
+        .blog-post-container .video {
+            width: 912px;
+            height: 512px;
+        }
+
+        .blog-post-container .word {
+            width: 912px;
+            height: 1170px;
         }
 
     .itchiolink {
