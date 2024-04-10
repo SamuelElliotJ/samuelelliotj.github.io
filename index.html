@@ -2,53 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/glightbox.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <title>Samuel Elliot - Portfolio</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Begin Title -->
-    <nav class="title-bar">
-        <h1 class="title-text">
-            <a href="index.html">Samuel Elliot</a>
-        </h1>
-    </nav>
-    <!-- End Title -->
-
-    <!-- Begin Top Nav -->
-    <nav class="nav-bar">
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item"><p>|</p></li>
-            <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><p>|</p></li>
-            <li class="nav-item"><a href="blog.html">Blog</a></li>
-            <li class="nav-item"><p>|</p></li>
-            <li class="nav-item"><a href="aboutme.html">About Me</a></li>
-            <li class="nav-item"><p>|</p></li>
-            <li class="nav-item"><a href="contacts.html">Contacts</a></li>
+<!-- Navbar Section -->
+<nav class="navbar">
+    <div class="navbar_container">
+        <a href="index.html" id="navbar_logo">Samuel Johnson</a>
+        <div class="navbar_toggle" id="mobile_menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="index.html" class="navbar_link">
+                    Home
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="portfolio.html" class="navbar_link">
+                    Portfolio
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="education.html" class="navbar_link">
+                    Education
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="contacts.html" class="navbar_link">
+                    Contacts
+                </a>
+            </li>
         </ul>
-    </nav>
-    <!-- End Top Nav -->
+    </div>
+</nav>
 
-    <!-- Begin Hero Header -->
-    <header class="hero-box">
-        <section class="hero-text-box">
-            <h1 class="hero-heading">Samuel Elliot</h1>
-            <p class="hero-subheading">Computer Games Programmer</p>
-            <p class="hero-text">Hello, I am an aspiring games developer based in the UK. I have a passion for programming and everything to do with tech in games. In my free time I like to play games and try to understand how they work and what makes them fun.</p>
-            <p class="hero-footer">Student at <a href="https://www.staffs.ac.uk">Staffordshire University</a></p>
-            <p class="hero-footer">CV Link: <a href="CV.html">CV</a></p>
-        </section>
-    </header>
-    <!-- End Hero Header -->
+<!-- Hero Section -->
+<div class="main">
+    <div class="main_container">
+        <div class="introduction_content">
+            <h1>Hi! ^_^</h1>
+            <p>My name is Samuel Elliot Johnson, a passionate game designer / programmer based in the UK who loves to play games and figure out how they work.</p>
+        </div>
+        <div class="main_image_container">
+            <img src="Images/placeholder.png" alt="image" id="main_image">
+        </div>
+    </div>
+</div>
 
-    <script src="js/glightbox.min.js"></script>
-    <script type="text/javascript">
-        const lightbox = GLightbox({ loop: true });
-    </script>
+<!-- Background Section -->
+<div class="background">
+    <div class="background_container">
+        <div class="background_content">
+            <h1>Background</h1>
+            <p>I'm a Games Design and Production student with a focus on programming at Staffordshire University (soon to be graduate), based in the UK. I have been making games since I was 16 and I focus mostly on rapid prototyping and gameplay mechanics. [...] </p>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Section -->
+<div class="skills">
+    <div class="skills_container">
+        <div class="skills_content">
+            <h1>Skills</h1>
+            <table class="skills_table">
+                <tr class="skills_table_row">
+                    <th class="skills_table_header">Languages:</th>
+                    <th class="skills_table_header">Engines:</th>
+                    <th class="skills_table_header">Tools:</th>
+                </tr>
+                <tr class="skills_table_row">
+                    <td class="skills_table_data">C++</td>
+                    <td class="skills_table_data">Unreal</td>
+                    <td class="skills_table_data">Git / Github</td>
+                </tr>
+                <tr class="skills_table_row">
+                    <td class="skills_table_data">C#</td>
+                    <td class="skills_table_data">Unity</td>
+                    <td class="skills_table_data"></td>
+                </tr>
+                <tr class="skills_table_row">
+                    <td class="skills_table_data">HTML5</td>
+                    <td class="skills_table_data"></td>
+                    <td class="skills_table_data"></td>
+                </tr>
+            </table>  
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer_container">
+    <div class="footer_content">
+        <p>Copyright © 2024 by Samuel Johnson | All content and trademarks property of their respective owners.</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
