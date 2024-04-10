@@ -79,7 +79,7 @@
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 920px){
     .navbar_container{
         padding: 0;
     }
