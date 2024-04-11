@@ -2,9 +2,119 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-Under Maintenance
+<!-- Navbar Section -->
+<nav class="navbar">
+    <div class="navbar_container">
+        <a href="index.html" id="navbar_logo">Samuel Johnson</a>
+        <div class="navbar_toggle" id="mobile_menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="index.html" class="navbar_link">
+                    Home
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="portfolio.html" class="navbar_link">
+                    Portfolio
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="contacts.html" class="navbar_link">
+                    Contacts / CV
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Featured Project -->
+<div class="featured_project">
+    <div class="featured_project_container">
+        <div class="featured_project_video">
+            <iframe width="480" height="320" allowfullscreen
+                    src="https://www.youtube.com/embed/0c-T2xUcAa4?si=IUXRRodpueCCrCzM">
+            </iframe>
+        </div>
+        <div class="featured_project_content">
+            <h1>Featured Project</h1>
+            <button class="featured_project_button"><a>Get Reel</a></button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus mattis molestie a iaculis at erat. Non blandit massa enim nec dui nunc mattis enim ut. Eget sit amet tellus cras adipiscing enim eu turpis. Felis bibendum ut tristique et egestas. Non diam phasellus vestibulum lorem sed risus ultricies. Orci dapibus ultrices in iaculis nunc sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Semper viverra nam libero justo laoreet sit. Eget dolor morbi non arcu risus quis varius quam quisque. Aliquam etiam erat velit scelerisque in dictum. In nisl nisi scelerisque eu ultrices vitae auctor eu.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Portfolio Section -->
+<div class="portfolio">
+    <div class="portfolio_content">
+        <h1>Projects</h1>
+        <div class="filters" id="filters">
+            <button class="filter_button" onclick="filterSelection('all')"><a>Show All</a></button>
+            <button class="filter_button" onclick="filterSelection('unreal')"><a>Unreal</a></button>
+            <button class="filter_button" onclick="filterSelection('unity')"><a>Unity</a></button>
+            <button class="filter_button" onclick="filterSelection('gamesjam')"><a>Games Jam</a></button>
+        </div>
+        <div class="row">
+            <div class="column unreal">
+                <div class="column_content">
+                    <img src="Images/shuffle.png" alt="Codename: Shuffle">
+                </div>
+            </div>
+            <div class="column unreal">
+                <div class="column_content">
+                    <img src="Images/getreel.png" alt="Get Reel">
+                </div>
+            </div>
+            
+            <div class="column unreal">
+                <div class="column_content">
+                    <img src="Images/compel.png" alt="Compel">
+                </div>
+            </div>
+            <div class="column unreal">
+                <div class="column_content">
+                    <img src="Images/staffsverse.png" alt="StaffsVerse">
+                </div>
+            </div>
+            
+            <div class="column unity">
+                <div class="column_content">
+                    <img src="Images/metalbard.png" alt="Metal Bard">
+                </div>
+            </div>
+            <div class="column unity">
+                <div class="column_content">
+                    <img src="Images/sidescrollingshooter.png" alt="Side Scrolling Shooter">
+                </div>
+            </div>
+            
+            <div class="column gamesjam">
+                <div class="column_content">
+                    <img src="Images/diadelosmuertos.png" alt="Dia De Los Muertos">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer_container">
+    <div class="footer_content">
+        <p>Copyright © 2024 by Samuel Johnson | All content and trademarks property of their respective owners.</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>

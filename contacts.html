@@ -2,9 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fcab90efac.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-Under Maintenance
+<!-- Navbar Section -->
+<nav class="navbar">
+    <div class="navbar_container">
+        <a href="index.html" id="navbar_logo">Samuel Johnson</a>
+        <div class="navbar_toggle" id="mobile_menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="index.html" class="navbar_link">
+                    Home
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="portfolio.html" class="navbar_link">
+                    Portfolio
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="contacts.html" class="navbar_link">
+                    Contacts / CV
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contacts Section -->
+
+<div class="contacts">
+    <div class="contacts_container">
+        <div class="contacts_content">
+            <h1>Contacts</h1>
+            <div class="contact_buttons_container">
+                <a href="mailto:samuelelliotj@gmail.com"><button class="contact_button"><i class="fa-solid fa-envelope"></i></button></a>
+                <a href="https://twitter.com/Samuel_Elliot_J"><button class="contact_button"><i class="fa-brands fa-x-twitter"></i></button></a>
+                <a href="https://github.com/SamuelElliotJ"><button class="contact_button"><i class="fa-brands fa-square-github"></i></button></a>
+                <a href="https://kakyosamdev.itch.io"><button class="contact_button"><i class="fa-brands fa-itch-io"></i></button></a>
+                <a href="https://www.linkedin.com/in/samuel-johnson-51257a1bb/"><button class="contact_button"><i class="fa-brands fa-linkedin"></i></button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CV Section -->
+
+<div class="cv">
+    <div class="cv_container">
+        <div class="cv_content">
+            <h1>CV</h1>
+            <a href="PDF/Samuel%20Elliot%20Johnson%20-%20CV.pdf"><img src="Images/cv.png" alt="cv png"></a>
+            <p>Click on the image for a PDF</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer_container">
+    <div class="footer_content">
+        <p>Copyright © 2024 by Samuel Johnson | All content and trademarks property of their respective owners.</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
