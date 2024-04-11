@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
+    <script src="https://kit.fontawesome.com/fcab90efac.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- Navbar Section -->
@@ -42,11 +45,11 @@
 <div class="project_info">
     <div class="project_info_container">
         <div class="project_info_content">
-            <h1>Shuffle</h1>
+            <h2>Cat Wizard VS The Dwarves</h2>
             <div class="project_info_video_container">
                 <div class="project_info_video_content">
                     <iframe width="480" height="320" allowfullscreen
-                            src="https://www.youtube.com/embed/0c-T2xUcAa4?si=IUXRRodpueCCrCzM">
+                            src="https://www.youtube.com/embed/v_5tdPDNXAc?si=nLJv-ZHYnCqIlH7j">
                     </iframe>
                 </div>
                 <div class="project_info_video_sidebar">
@@ -70,6 +73,19 @@
                 <h2>Overview</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
+            <div class="gallery_container">
+                <div class="galleria">
+                    <img src="Images/CatWizard/CWVD_1.png">
+                    <img src="Images/CatWizard/CWVD_2.jpg">
+                    <img src="Images/CatWizard/CWVD_3.jpg">
+                    <img src="Images/CatWizard/CWVD_4.jpg">
+                </div>
+            </div>
+            <div class="project_download">
+                <h2>Download</h2>
+                <a href="https://lukemanga.itch.io/group-29-cat-wizard-vs-dwarves"><button class="contact_button"><i class="fa-brands fa-itch-io"></i></button></a>
+                <p>Link to Itch.io page</p>
+            </div>
         </div>
     </div>
 </div>
@@ -81,6 +97,16 @@
     </div>
 </div>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="galleria/galleria-1.5.7.min.js"></script>
 <script src="app.js"></script>
+<script>
+    (function() {
+        Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/azur/galleria.azur.min.js');
+        Galleria.run('.galleria', {
+            autoplay: 7000 // will move forward every 7 seconds
+        });
+    }());
+</script>
 </body>
 </html>
