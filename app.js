@@ -1,12 +1,13 @@
 ﻿const navbar = document.querySelector('#mobile_menu')
 const navbarmenu = document.querySelector('.navbar_menu')
 
-navbar.addEventListener('click', function(){
+navbar.addEventListener('click', function () {
     navbar.classList.toggle('is-active');
     navbarmenu.classList.toggle('active');
 })
 
 filterSelection("all")
+
 function filterSelection(c) {
     var x, i;
     x = document.getElementsByClassName("column");
@@ -22,7 +23,9 @@ function w3AddClass(element, name) {
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
     for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+        }
     }
 }
 

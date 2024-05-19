@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport"
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/fcab90efac.js"></script>
 </head>
 <body>
 <!-- Navbar Section -->
@@ -20,17 +24,17 @@
         </div>
         <ul class="navbar_menu">
             <li class="navbar_item">
-                <a href="index.html" class="navbar_link">
+                <a class="navbar_link" href="index.html">
                     Home
                 </a>
             </li>
             <li class="navbar_item">
-                <a href="portfolio.html" class="navbar_link">
+                <a class="navbar_link" href="portfolio.html">
                     Portfolio
                 </a>
             </li>
             <li class="navbar_item">
-                <a href="contacts.html" class="navbar_link">
+                <a class="navbar_link" href="contacts.html">
                     Contacts / CV
                 </a>
             </li>
@@ -42,33 +46,49 @@
 <div class="project_info">
     <div class="project_info_container">
         <div class="project_info_content">
-            <h1>Side Scrolling Shooter</h1>
+            <h2>Side Scrolling Shooter</h2>
             <div class="project_info_video_container">
                 <div class="project_info_video_content">
-                    <iframe width="480" height="320" allowfullscreen
-                            src="https://www.youtube.com/embed/dQkazzT-tso?si=Glq1j5E3mTsiDy3o">
+                    <iframe allowfullscreen height="320" src="https://www.youtube.com/embed/dQkazzT-tso?si=KYnWAxbQyLxh4ckh"
+                            width="480">
                     </iframe>
                 </div>
                 <div class="project_info_video_sidebar">
                     <h2>Platform:</h2>
-                    <p>[...]</p>
+                    <p>Windows PC</p>
                     <h2>Engine:</h2>
-                    <p>[...]</p>
+                    <p>Unity</p>
                     <h2>Language:</h2>
-                    <p>[...]</p>
+                    <p>C#</p>
                     <h2>Tools Used:</h2>
                     <p>[...]</p>
                     <h2>Duration:</h2>
                     <p>[...]</p>
                     <h2>Team Size:</h2>
-                    <p>[...]</p>
+                    <p>1</p>
                     <h2>Role:</h2>
-                    <p>[...]</p>
+                    <p>Project Lead</p>
                 </div>
             </div>
             <div class="project_info_overview">
                 <h2>Overview</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="gallery_container">
+                <div class="galleria">
+                    <img src="">
+                </div>
+            </div>
+            <div class="project_download">
+                <h2>Download</h2>
+                <a href="">
+                    <button class="contact_button"><i class="fa-brands fa-itch-io"></i></button>
+                </a>
+                <p>Link to Download Project</p>
             </div>
         </div>
     </div>
@@ -81,6 +101,16 @@
     </div>
 </div>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="galleria/galleria-1.5.7.min.js"></script>
 <script src="app.js"></script>
+<script>
+    (function () {
+        Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/azur/galleria.azur.min.js');
+        Galleria.run('.galleria', {
+            autoplay: 7000 // will move forward every 7 seconds
+        });
+    }());
+</script>
 </body>
 </html>
