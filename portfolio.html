@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1.0" name="viewport">
@@ -8,103 +9,159 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<!-- Navbar Section -->
-<nav class="navbar">
-    <div class="navbar_container">
-        <a href="index.html" id="navbar_logo">Samuel Johnson</a>
-        <div class="navbar_toggle" id="mobile_menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="navbar_menu">
-            <li class="navbar_item">
-                <a class="navbar_link" href="index.html">
-                    Home
-                </a>
+<nav class = navbar>
+    <div class = navbar-container>
+        <a href="index.html" class="navbar-title">Samuel Johnson</a>
+        <ul class="navbar-items">
+            <li class="navbar-item">
+                <button class = button-standard><a href="index.html" class="navbar-link">About</a></button>
             </li>
-            <li class="navbar_item">
-                <a class="navbar_link" href="portfolio.html">
-                    Portfolio
-                </a>
+            <li class="navbar-item">
+                <button class = button-standard><a href="portfolio.html" class="navbar-link">Portfolio</a></button>
             </li>
-            <li class="navbar_item">
-                <a class="navbar_link" href="contacts.html">
-                    Contacts / CV
-                </a>
+            <li class="navbar-item">
+                <button class = button-standard><a href="contacts-cv.html" class="navbar-link">Contact / CV</a></button>
             </li>
         </ul>
     </div>
 </nav>
 
-<!-- Featured Project -->
-<div class="featured_project">
-    <div class="featured_project_container">
-        <div class="featured_project_video">
-            <iframe allowfullscreen height="320" src="https://www.youtube.com/embed/p5HN_UPXxY4?si=tUk_-RHhfsZ331NC"
-                    width="480">
-            </iframe>
-        </div>
-        <div class="featured_project_content">
-            <h2>Featured Project</h2>
-            <button class="featured_project_button"><a href="project_getreel.html">Get Reel</a></button>
-            <p>"Get Reel is a relaxing fish catching game for krilling time!"</p>
-            <p><br>This project was made in 8 weeks as part of my third year senior collaborative module.
-                For this project i acted as the project lead and since the tech team was relatively small with
-                around 5 people I also acted as tech lead which is where most of my work went to.</p>
-            <p><br>Contents:</p>
-            <p>Unreal Engine 5</p>
-            <p>Collaborative</p>
-            <p>Technical Design / Programming</p>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Section -->
-<div class="portfolio">
-    <div class="portfolio_content">
-        <h2>Projects</h2>
-        <div class="filters" id="filters">
-            <button class="filter_button" onclick="filterSelection('all')"><a>Show All</a></button>
-            <button class="filter_button" onclick="filterSelection('unreal')"><a>Unreal</a></button>
-            <button class="filter_button" onclick="filterSelection('unity')"><a>Unity</a></button>
-        </div>
-        <div class="row">
-            <div class="column unreal">
-                <div class="column_content">
-                    <a href="project_getreel.html"><img alt="Get Reel" src="Images/Thumbnails/getreel.png"></a>
-                </div>
+<div class = tile>
+    <div class = tile-container>
+        <div class = featured-content>
+            <div class = featured-video>
+                <iframe class = mini-player src="https://www.youtube.com/embed/p5HN_UPXxY4?si=tUk_-RHhfsZ331NC" title="Get Reel Demo Video"></iframe>
             </div>
-            <div class="column unreal">
-                <div class="column_content">
-                    <a href="project_shuffle.html"><img alt="Codename: Shuffle" src="Images/Thumbnails/shuffle.png"></a>
-                </div>
-            </div>
-            <div class="column unreal">
-                <div class="column_content">
-                    <a href="project_catwizard.html"><img alt="Cat Wizard" src="Images/Thumbnails/catwizard.png"></a>
-                </div>
-            </div>
-            <div class="column unity">
-                <div class="column_content">
-                    <a href="project_metalbard.html"><img alt="Metal Bard" src="Images/Thumbnails/metalbard.png"></a>
-                </div>
-            </div>
-            <div class="column unity">
-                <div class="column_content">
-                    <a href="project_sidescrollingshooter.html"><img alt="Side Scrolling Shooter"
-                                                                     src="Images/Thumbnails/sidescrollingshooter.png"></a>
-                </div>
+            <div class = featured-content-info>
+                <h1>Featured Project!</h1>
+                <p>"Get Reel is a relaxing fish catching game for krilling time!"</p>
+                <p>
+                    This project was made in 8 weeks as part of my third year senior collaborative module.
+                    For this project i acted as the project lead and since the tech team was relatively small with
+                    around 5 people I also acted as tech lead which is where most of my work went to.
+                </p>
+                <p>Content:</p>
+                <ul class = bullet-list>
+                    <li class = bullet-list-item>Unreal Engine 5</li>
+                    <li class = bullet-list-item>Technical Design / Programming</li>
+                    <li class = bullet-list-item>GitHub</li>
+                </ul>
+                <button class = button-standard><a class = button-text href="index.html">Project Link</a></button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Footer Section -->
-<div class="footer_container">
-    <div class="footer_content">
-        <p>Copyright © 2024 by Samuel Johnson | All content and trademarks property of their respective owners.</p>
+<div class = tile>
+    <div class = tile-container>
+        <div class = portfolio-content>
+            <h1 class = centered-title>Projects</h1>
+            <div class="filters" id="filters">
+                <button class = filter-button onclick = "filterSelection('all')"><a>Show All</a></button>
+                <button class = filter-button onclick = "filterSelection('unreal')"><a>Unreal</a></button>
+                <button class = filter-button onclick = "filterSelection('unity')"><a>Unity</a></button>
+            </div>
+            <div class = "row">
+                <div class = "column unreal">
+                    <div class = column-content>
+                        <div class = column-img>
+                            <img alt = GetReel src = Images/Thumbnails/getreel.png>
+                        </div>
+                        <div class = column-content-info>
+                            <h1>Get Reel</h1>
+                            <p>Content:</p>
+                            <ul class = bullet-list>
+                                <li class = bullet-list-item>Engine: Unreal Engine 5.2</li>
+                                <li class = bullet-list-item>Language: C++ / Blueprint</li>
+                                <li class = bullet-list-item>Duration: 8 weeks</li>
+                                <li class = bullet-list-item>Role: Technical Designer / Programmer</li>
+                            </ul>
+                            <button class = button-standard><a class = button-text href="index.html">Project Link</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "column unreal">
+                    <div class = column-content>
+                        <div class = column-img>
+                            <img alt = Shuffle src = Images/Thumbnails/shuffle.png>
+                        </div>
+                        <div class = column-content-info>
+                            <h1>Shuffle</h1>
+                            <p>Content:</p>
+                            <ul class = bullet-list>
+                                <li class = bullet-list-item>Engine: Unreal Engine 5.2</li>
+                                <li class = bullet-list-item>Language: C++ / Blueprint</li>
+                                <li class = bullet-list-item>Duration: 8 weeks</li>
+                                <li class = bullet-list-item>Role: Technical Designer / Programmer</li>
+                            </ul>
+                            <button class = button-standard><a class = button-text href="index.html">Project Link</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "column unreal">
+                    <div class = column-content>
+                        <div class = column-img>
+                            <img alt = CatWizardVsDwarves src = Images/Thumbnails/catwizard.png>
+                        </div>
+                        <div class = column-content-info>
+                            <h1>Cat Wizards Vs Dwarves</h1>
+                            <p>Content:</p>
+                            <ul class = bullet-list>
+                                <li class = bullet-list-item>Engine: Unreal Engine 4</li>
+                                <li class = bullet-list-item>Language: Blueprint</li>
+                                <li class = bullet-list-item>Duration: 8 weeks</li>
+                                <li class = bullet-list-item>Role: Junior Technical Designer</li>
+                            </ul>
+                            <button class = button-standard><a class = button-text href="index.html">Project Link</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "column unity">
+                    <div class = column-content>
+                        <div class = column-img>
+                            <img alt = MetalBard src = Images/Thumbnails/metalbard.png>
+                        </div>
+                        <div class = column-content-info>
+                            <h1>Metal Bard</h1>
+                            <p>Content:</p>
+                            <ul class = bullet-list>
+                                <li class = bullet-list-item>Engine: Unity</li>
+                                <li class = bullet-list-item>Language: C#</li>
+                                <li class = bullet-list-item>Duration: 12 weeks</li>
+                                <li class = bullet-list-item>Solo Project</li>
+                            </ul>
+                            <button class = button-standard><a class = button-text href="index.html">Project Link</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "column unity">
+                    <div class = column-content>
+                        <div class = column-img>
+                            <img alt = SideScrollingShooter src = Images/Thumbnails/sidescrollingshooter.png>
+                        </div>
+                        <div class = column-content-info>
+                            <h1>Side Scrolling Shooter</h1>
+                            <p>Content:</p>
+                            <ul class = bullet-list>
+                                <li class = bullet-list-item>Engine: Unity</li>
+                                <li class = bullet-list-item>Language: C#</li>
+                                <li class = bullet-list-item>Duration: 6 weeks</li>
+                                <li class = bullet-list-item>Solo Project</li>
+                            </ul>
+                            <button class = button-standard><a class = button-text href="index.html">Project Link</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = footer-tile>
+    <div class = footer-content>
+        <p class = footer>Copyright © 2024 by Samuel Johnson | All content and trademarks property of their respective owners.</p>
     </div>
 </div>
 
