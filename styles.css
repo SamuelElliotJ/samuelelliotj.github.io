@@ -83,6 +83,10 @@ p{
     font-size: 1rem;
 }
 
+a:hover{
+    color: var(--text-colour-1)
+}
+
 .tile{
     padding-top: 25px;
 }
@@ -111,6 +115,9 @@ p{
     width: 90%;
     border-radius: 10px;
     border: solid var(--bg-colour-3);
+    background-image: url("Images/Thumbnails/Petrifact_Thumbnail.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .button-standard{
@@ -191,8 +198,12 @@ p{
     width: 75px;
     height: 75px;
     font-size: 2rem;
-    color: var(--text-colour-1);
+    color: var(--text-colour-2);
     cursor: pointer;
+}
+
+.contact-button:hover{
+    color: var(--text-colour-1);
 }
 
 .portfolio-content{
@@ -229,7 +240,7 @@ p{
     background-color: var(--bg-colour-3);
     border-radius: 30px;
 }
-
+/
 .show{
     display: block;
 }
@@ -264,9 +275,13 @@ p{
 }
 
 .tile-container-title h1{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .project-overview{
     text-align: center;
+}
+
+.page-title{
+    font-size: 3rem;
 }
